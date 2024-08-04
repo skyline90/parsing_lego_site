@@ -28,11 +28,11 @@ def get_themes(soup):
         themes_list.append(themes_dict)
 
     # Сохранение информации в csv файл
-    keys = themes_list[0].keys()
-    with open('themes.csv', 'w') as file:
-        dict_writer = csv.DictWriter(file, keys)
-        dict_writer.writeheader()
-        dict_writer.writerows(themes_list)
+    # keys = themes_list[0].keys()
+    # with open('themes.csv', 'w') as file:
+    #     dict_writer = csv.DictWriter(file, keys)
+    #     dict_writer.writeheader()
+    #     dict_writer.writerows(themes_list)
 
     return themes_list
 
