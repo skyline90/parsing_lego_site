@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import csv
+# import csv
 
 
 url_main = 'https://www.lego.com'
@@ -40,7 +40,7 @@ def get_themes(soup):
 def main():
     soup = get_soup(url=url_theme)
     themes = get_themes(soup=soup)
-    # print(themes)
+    print(themes)
 
 
 if __name__ == '__main__':
